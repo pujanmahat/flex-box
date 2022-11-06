@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       .flexcontainer{
+        height: 900px;
+         background-color: #fad390;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         /* justify-content: space-between; */
+         /* justify-content:end; */
+         /* flex-direction: row-reverse; */
+         /* justify-content: space-around; */
+         /* justify-content: start; */
+         gap: 50px;
+         flex-direction: column;
+         
+       }
+       .flex-item{
+        height: 200px;
+        width: 200px;
+        
+       }
+       .red{
+        background-color: red;
+       }
+       .blue{
+        background-color: blue;
+       }
+       .green{
+        background-color: green;
+       }
+    </style>
+</head>
+<body>
+    <div class="flexcontainer">
+        <div class="flex-item red"></div>
+        <div class="flex-item blue"></div>
+        <div class="flex-item green"></div>
+    </div>
+</body>
+</html>
